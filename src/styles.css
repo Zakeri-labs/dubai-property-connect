@@ -40,7 +40,7 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
 
-  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-serif: "Amiri", serif;
   --font-sans: "Inter", system-ui, sans-serif;
   --font-fa: "Vazirmatn", "Inter", system-ui, sans-serif;
   --font-ar: "Tajawal", "Noto Kufi Arabic", "Inter", system-ui, sans-serif;
@@ -116,13 +116,23 @@
   html[lang="fa"] body { font-family: var(--font-fa); }
   html[lang="ar"] body { font-family: var(--font-ar); }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
     letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3 {
     font-weight: 500;
   }
-  html[lang="fa"] h1, html[lang="fa"] h2, html[lang="fa"] h3 { font-family: var(--font-fa); font-weight: 700; }
-  html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3 { font-family: var(--font-ar); font-weight: 700; }
+
+  html[lang="fa"] h1,
+  html[lang="fa"] h2,
+  html[lang="fa"] h3,
+  html[lang="ar"] h1,
+  html[lang="ar"] h2,
+  html[lang="ar"] h3 {
+    font-weight: 700;
+  }
 
   ::selection {
     background-color: var(--color-gold);
