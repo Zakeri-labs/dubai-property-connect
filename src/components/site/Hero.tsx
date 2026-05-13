@@ -9,7 +9,7 @@ export function Hero() {
   const badgeIcons = [ShieldCheck, Building2, Languages, Home];
 
   return (
-    <section className="px-3 pt-4 sm:px-6">
+    <section className="px-3 pt-4 sm:px-6 mt-5">
       <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-contrast text-contrast-foreground shadow-card">
         <div className="relative">
           <img

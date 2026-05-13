@@ -23,7 +23,7 @@ export function Header() {
           to={`/${lang as Lang}`}
           className="flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-semibold text-foreground"
         >
-          <span className="font-serif text-base tracking-tight">
+          <span className="font-serif text-2xl tracking-tight">
             {lang === "fa" ? "مریم البلوشی" : "مريم البلوشي"}
           </span>
         </Link>
