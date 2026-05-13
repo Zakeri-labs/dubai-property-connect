@@ -16,7 +16,8 @@ export function GoalCards() {
           return (
             <Link
               key={i}
-              to={`/${lang}/projects`}
+              to="/$lang/projects"
+              params={{ lang }}
               className="group flex flex-col rounded-3xl border border-border bg-surface p-6 shadow-soft transition-all hover:-translate-y-1 hover:shadow-card"
             >
               <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-accent text-primary">

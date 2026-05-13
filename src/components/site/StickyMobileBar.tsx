@@ -26,7 +26,8 @@ export function StickyMobileBar() {
           {t.cta.call}
         </a>
         <Link
-          to={`/${lang}/contact`}
+          to="/$lang/contact"
+          params={{ lang }}
           className="flex flex-col items-center justify-center gap-0.5 rounded-xl bg-foreground py-2 text-[11px] font-medium text-background"
         >
           <CalendarCheck className="h-4 w-4" />

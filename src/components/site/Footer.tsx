@@ -25,11 +25,31 @@ export function Footer() {
             {t.footer.sections.links}
           </h3>
           <ul className="space-y-2 text-sm text-contrast-foreground/70">
-            <li><Link to={`/${lang}/projects`} className="hover:text-gold">{t.nav.projects}</Link></li>
-            <li><Link to={`/${lang}/dubai-residency-property`} className="hover:text-gold">{t.nav.residency}</Link></li>
-            <li><Link to={`/${lang}/about`} className="hover:text-gold">{t.nav.about}</Link></li>
-            <li><Link to={`/${lang}/faq`} className="hover:text-gold">{t.nav.faq}</Link></li>
-            <li><Link to={`/${lang}/contact`} className="hover:text-gold">{t.nav.contact}</Link></li>
+            <li>
+              <Link to="/$lang/projects" params={{ lang }} className="hover:text-gold">
+                {t.nav.projects}
+              </Link>
+            </li>
+            <li>
+              <Link to="/$lang/dubai-residency-property" params={{ lang }} className="hover:text-gold">
+                {t.nav.residency}
+              </Link>
+            </li>
+            <li>
+              <Link to="/$lang/about" params={{ lang }} className="hover:text-gold">
+                {t.nav.about}
+              </Link>
+            </li>
+            <li>
+              <Link to="/$lang/faq" params={{ lang }} className="hover:text-gold">
+                {t.nav.faq}
+              </Link>
+            </li>
+            <li>
+              <Link to="/$lang/contact" params={{ lang }} className="hover:text-gold">
+                {t.nav.contact}
+              </Link>
+            </li>
           </ul>
         </div>
 

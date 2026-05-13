@@ -12,7 +12,8 @@ export function BlogPreview() {
         {t.blog.posts.map((post) => (
           <Link
             key={post.slug}
-            to={`/${lang}/blog`}
+            to="/$lang/blog"
+            params={{ lang }}
             className="group flex flex-col rounded-3xl border border-border bg-surface p-6 shadow-soft transition-all hover:-translate-y-1 hover:shadow-card"
           >
             <div className="text-xs uppercase tracking-wider text-muted-foreground">{t.nav.blog}</div>
