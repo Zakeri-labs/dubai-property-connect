@@ -1,15 +1,6 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist/client",
-  "functions": {
-    "dist/server/server.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/dist/server/server.js"
-    }
-  ]
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": ".vercel/output",
+  "installCommand": "npm install"
 }
+
